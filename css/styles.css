@@ -1,0 +1,9 @@
+.flashcard {
+  height: 300px;
+  width: 500px;
+  background-color: yellow;
+}
+
+p {
+  display: none;
+}
