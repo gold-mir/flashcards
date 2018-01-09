@@ -1,9 +1,18 @@
 .flashcard {
-  height: 300px;
-  width: 500px;
+  margin-bottom: 30px;
+}
+
+.flashcard .card {
+  height: 20em;
+  width: 20em;
   background-color: yellow;
 }
 
-p {
+.flashcard .card:last-child {
   display: none;
+}
+
+.card-title {
+  margin-top: 40%;
+  margin-bottom: 40%; 
 }

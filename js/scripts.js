@@ -1,7 +1,13 @@
 $(function() {
-  $(".flashcard").click(function() {
-    $(this).children("p").fadeToggle();
-    $(this).children("h2").fadeToggle();
-    // $(this.child("h2")).toggle();
+
+  $(".flashcard-title").click(function(){
+    $(this).fadeToggle(function(){
+      $(this).parent().children(".flashcard-body").fadeToggle();
+    });
+  });
+  $(".flashcard-body").click(function(){
+    $(this).fadeToggle(function() {
+      $(this).parent().children(".flashcard-title").fadeToggle();
+    });
   });
 });
